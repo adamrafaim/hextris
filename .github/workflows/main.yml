@@ -9,7 +9,7 @@ jobs:
       uses: actions/checkout@v3
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
-      with:
+      with: 
         server: files.000webhost.com
         username: ${{secrets.FTP_USERNAME}} 
         password: ${{secrets.FTP_PASSWORD}}
